@@ -1,4 +1,4 @@
-//Elisangela Yumi Jinno Pinho - 111 246 883
+
 
 #include "jeu.hpp"
 
@@ -9,7 +9,7 @@
 std::vector<Monstre> programmationDynamique(const std::vector<Monstre>& monstres, unsigned int magie_rouge, unsigned int magie_bleue) {
     // Inserez votre code ici
 
-    unsigned int dimension[3] = {static_cast<unsigned int>((monstres.size()+1)), magie_rouge+1, magie_bleue+1}; //on ajoute 1 pour creer les dimensions car assert(premier_index < m_dimensions[0])
+    unsigned int dimension[3] = {static_cast<unsigned int>((monstres.size()+1)), magie_rouge+1, magie_bleue+1};
 
     Tableau<unsigned int> tableauDegats(std::vector<unsigned int>(dimension, dimension + 3));
 
